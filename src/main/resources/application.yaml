@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: traceid-test
+  config:
+    import:
+      - classpath:/logging.properties
+  sleuth:
+    baggage:
+      local-fields: additionalTraceId
+      correlation-fields: additionalTraceId
